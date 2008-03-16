@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<project name="qInfer" default="test" xmlns="http://nant.sf.net/schemas/nant.xsd">
+	<property name="build.dir" value="build" />
+	<property name="project.config" value="Debug" />
+	<property name="nant.settings.currentframework" value="net-3.5" />
+	
+	<!-- User targets -->
+	<target name="clean" description="Delete Automated Build artifacts">
+		<delete dir="${build.dir}" if="${directory::exists(build.dir)}"/>
+	</target>
+	
+	<target name="compile" description="Compiles using the AutomatedDebug Configuration">
+		<exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe"
+				commandline="src\qInfer.sln /t:Clean /p:Configuration=${project.config} /v:q" workingdir="." />
+		<exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe"
+				commandline="src\qInfer.sln /t:Rebuild /p:Configuration=${project.config} /v:q" workingdir="." />
+	</target>
+	
+	<target name="test" depends="compile, run-unit-tests" 
+		description="Compile and Run Tests" />
+		
+	<target name="full" depends="clean, test"	description="Compiles, tests" />
+
+	<target name="move-for-test">
+		<copy todir="${build.dir}\${project.config}" flatten="true">
+			<fileset basedir="src">
+				<include name="/**/bin/${project.config}/**" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="run-unit-tests" depends="move-for-test">
+		<mkdir dir="${build.dir}\test-reports" />
+		<nunit2 failonerror="true" verbose="true">
+			<formatter type="Xml" outputdir="${build.dir}\test-reports" usefile="true" extension=".xml"/>
+			<formatter type="Plain" />
+			<test assemblyname="${build.dir}/${project.config}/${project::get-name()}.UnitTests.dll" />
+		</nunit2>
+	</target>
+
+	
+</project>
+
