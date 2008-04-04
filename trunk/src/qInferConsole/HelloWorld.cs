@@ -2,7 +2,7 @@ using System;
 
 namespace qInfer.qInferConsole
 {
-	class HelloWorld
+	class qInfer
 	{
 		[STAThread]
 		static void Main(string[] args)
