@@ -1,7 +1,7 @@
 ﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>8.0.21022</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9176B27D-2BF8-46F0-A089-F62C30260EE7}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -110,14 +110,16 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="HelloWorld.cs">
+    <Compile Include="CsvParser.cs" />
+    <Compile Include="qInfer.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
+    <PreBuildEvent>copy $(SolutionDir)..\doc\qa\intrebari.txt $(TargetDir)
+copy $(SolutionDir)..\doc\qa\schema.ini $(TargetDir)
+copy $(SolutionDir)..\doc\QTypesDef.xml $(TargetDir)</PreBuildEvent>
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
