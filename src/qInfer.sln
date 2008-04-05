@@ -12,6 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\qInfer.build = ..\qInfer.build
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Files", "Test Files", "{BE48D678-3418-4A8E-8D20-53EC9BD8D071}"
+	ProjectSection(SolutionItems) = preProject
+		..\doc\qa\intrebari.txt = ..\doc\qa\intrebari.txt
+		..\doc\QTypesDef.xml = ..\doc\QTypesDef.xml
+		..\doc\qa\schema.ini = ..\doc\qa\schema.ini
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AutomatedDebug|Any CPU = AutomatedDebug|Any CPU
