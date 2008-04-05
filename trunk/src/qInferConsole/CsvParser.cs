@@ -21,7 +21,7 @@ namespace qInfer.qInferConsole
                     Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location))
                     );
             OleDbCommand selCommand = new OleDbCommand(
-                string.Format(@"select * from ""{0}""", CsvFilePath),
+                string.Format("select * from {0}", CsvFilePath),
                 connection);
 
             DataTable table = new DataTable();
