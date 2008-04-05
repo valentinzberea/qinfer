@@ -1,0 +1,5 @@
+<Q_TYPES>
+	<Type Id="DEFINITION" Expression="^Cine.*"/>
+	<Type Id="LIST" Expression="^Care sunt.*"/>
+	<Type Id="FACTOID" Expression=".*"/>
+</Q_TYPES>

@@ -1,0 +1,201 @@
+RO	EN	0001	Câte medalii de aur a câºtigat Brian Goodel la Jocurile Pan Americane din 1979?
+RO	EN	0002	Care sportiv a câºtigat optsprezce medalii de aur ºi a stabilit 21 de recorduri mondiale?
+RO	EN	0003	Câte din recordurile sportive mondiale ale bãrbaþilor au fost înscrise în 1995?
+RO	EN	0004	Ce este Top Quark?
+RO	EN	0005	Care sunt cele trei particule elementare ale fizicii potrivit Modelului Standard?
+RO	EN	0006	Unde este Laboratorul Fermi National Accelerator?
+RO	EN	0007	Câþi cercetãtori au fost implicaþi în cãutarea de 17 ani a lui Top Quark?
+RO	EN	0008	Câþi pasageri poartã nava "Canadian Empress"?
+RO	EN	0009	Unde a fost construit vaporul de croazierã "Oriana"?
+RO	EN	0010	Care este Imnul Naþional Bavarez?
+RO	EN	0011	Cine a fost arhiepiscopul catolic al Munich-ului în 1995?
+RO	EN	0012	Câte "landuri" sunt în Germania?
+RO	EN	0013	Cine a format Minerva Rigging la Kip Marina?
+RO	EN	0014	Cine este cel mai de succes cãpitan de iaht al Marii Britanii?
+RO	EN	0015	În ce stat american este Everglades National Park?
+RO	EN	0016	Cât de larg este Everglades?
+RO	EN	0017	Care este singura din cele "ºapte minuni ale lumii" sã fi supravieþuit?
+RO	EN	0018	Acum câþi ani a fost construit Farul din Pharos?
+RO	EN	0019	Cât de înalt era Farul din Pharos?
+RO	EN	0020	Numeºte siturile Patrimoniului Mondial.
+RO	EN	0021	Cine a descoperit cometa Shoemaker-Levy?
+RO	EN	0022	Ce planetã a lovit cometa Shoemaker-Levy?
+RO	EN	0023	Câte comete se considerã cã existã?
+RO	EN	0024	Ce proporþie din tot laptele vândut este folosit pe cereale la micul dejun?
+RO	EN	0025	Câte oraºe ruseºti au nevoie de eliberare a poluãrii aerului potrivit World Bank?
+RO	EN	0026	Ce este Quinoa?
+RO	EN	0027	Ce organizaþie a laptelui a fost desfiinþatã în noiembrie 1994?
+RO	EN	0028	Numeºte oamenii care au fost contestatari conºtiincioºi.
+RO	EN	0029	Din ce þarã vin Gurkha?
+RO	EN	0030	Din ce organizaþie ºi-a dat demisia Willy Claes ca Secretar General în 1995?
+RO	EN	0031	Câþi membri NATO existã?
+RO	EN	0032	Ce companie a preluat Barings dupã prãbuºirea ei în februarie 1995?
+RO	EN	0033	Cine este Nick Leeson?
+RO	EN	0034	Cine a fost preºedintele Franþei în timpul testelor armelor nucleare în Pacificul de Sud?
+RO	EN	0035	Ce þãri sunt declarate puteri nucleare?
+RO	EN	0036	În ce an au avut loc debarcãrile din Normandia?
+RO	EN	0037	Cine a numit ziua-D "o mare campanie"?
+RO	EN	0038	Ce unitate armatã participând la debarcãrile din ziua-D are motto-ul "Nici o misiune prea dificilã, nici un sacrificiu prea mare, absolut nimic nu poate opri Prima Divizie"?
+RO	EN	0039	Cine a fost Lin Piao?
+RO	EN	0040	Unde a fost descoperitã o fosilã de Oviraptor stând pe un cuib?
+RO	EN	0041	Ce este lepra?
+RO	EN	0042	Cãrei organizaþii îi este Peter Anderson consilierul pe probleme de alcool?
+RO	EN	0043	Cine a fost Vermeer?
+RO	EN	0044	Cãrui partid politic i-a fost membru Willy Brand?
+RO	EN	0045	Care este numele partidului politic al lui Helmut Kohl?
+RO	EN	0046	Numeºte o companie britanicã care transportã deºeuri nucleare.
+RO	EN	0047	Când a fost semnatã "Convenþia Basle pe Controlul Miºcãrilor Transfrontaliere ale Deºeurilor Riscante"?
+RO	EN	0048	Ce a fost descris ca "o unealtã stricatã" ºi "cea mai grozavã dezordine mondialã"?
+RO	EN	0049	Cine este Klaus Pohl?
+RO	EN	0050	Care este cel mai lung cuvânt german?
+RO	EN	0051	Care este noul nume pentru Nicosia ca urmare a schimbãrilor de scriere din Cipru?
+RO	EN	0052	În ce an a fost lansat Hubble Space Telescope?
+RO	EN	0053	Unde este Laboratorul Jet Propulsion al NASA?
+RO	EN	0054	Când este preconizat sã se termine misiunea probei spaþiale Galileo?
+RO	EN	0055	Cine este Kailash Satyarthi?
+RO	EN	0056	Când a fost adoptat Actul De Abolire ªi Reglementare A Muncii Copiilor de catre Uttar Pradesh?
+RO	EN	0057	Ce sunt latifundiile?
+RO	EN	0058	În ce oraº a fost ucis Vladislav Listyev?
+RO	EN	0059	Ce compozitor a scris opera "Fata din Pskov"?
+RO	EN	0060	Ce înseamnã în muzicã termenul "Les Six"?
+RO	EN	0061	Care este numele monedei Letone?
+RO	EN	0062	Cine este Primul Ministru al Lituaniei?
+RO	EN	0063	Cui îi aparþinea Nisa între 1814 ºi 1860?
+RO	EN	0064	Cine a fost Regele Italiei de la 1900 la 1946?
+RO	EN	0065	Care este numele companiei aeriene naþionale din Italia?
+RO	EN	0066	Care este abrevierea pentru "Administraþia Aviaþiei Federale"?
+RO	EN	0067	Ce este "turbulenþa de siaj"?
+RO	EN	0068	Ce este Organizaþia Aviaþiei Civile Internaþionale?
+RO	EN	0069	Cine este capul Bãncii Tokyo?
+RO	EN	0070	Când a devenit Cosmo Securities parte din Daiwa Bank?
+RO	EN	0071	Ce este "nintendo"?
+RO	EN	0072	Ce este Acordul Dayton?
+RO	EN	0073	Ce este GI Joe?
+RO	EN	0074	Numeºte un regizor care a câºtigat un Oscar pentru filmul lui din 1987.
+RO	EN	0075	Cine a spus "Pune talent în meºtesugul tãu ºi geniu în viaþa ta"?
+RO	EN	0076	Ce este OAU?
+RO	EN	0077	Al cãrei organizaþii este Sam Chisholm director executiv?
+RO	EN	0078	Ce este Reuters?
+RO	EN	0079	Cât va costa planul de apãrare sugerat împotriva inundaþiei pentru Perth?
+RO	EN	0080	Cine este profesor de Medicinã Legalã la Universitatea din Edinburgh?
+RO	EN	0081	Unde a avut loc "ceaþa ucigaºã" din 1952 care a rezultat în 4.000 de morþi?
+RO	EN	0082	Când a anexat Indonezia East Timor?
+RO	EN	0083	Care este principala religie în East Timor?
+RO	EN	0084	Câte case se preconizeazã sã fie construite sub Iniþiativa Stirling între 1993 ºi 1998?
+RO	EN	0085	La care spectacol aerian s-a prabuºit un F-86 Mk 6 în 1993?
+RO	EN	0086	Al cãrei organizaþii este Velupillai Prabakaran capul?
+RO	EN	0087	Ce organizaþie a ocupat Sri Lanka de est între 1987 ºi 1989?
+RO	EN	0088	Scufundarea propusã a cãrei structuri în Atlantic a cauzat controverse la summitul G7 din Halifax?
+RO	EN	0089	Ce rãneºte 11.000 oameni pe an potrivit lui Prevent Blindness America?
+RO	EN	0090	Ce este "Lumea lui Sophie"?
+RO	EN	0091	În ce an a fost Graeme Obree numit Personalitatea Sportivã a Scoþiei?
+RO	EN	0092	În ce an a câºtigat Aung San Suu Kyi Premiul Nobel pentru Pace?
+RO	EN	0093	În timpul sezonului uraganelor, unde intenþioneazã Dugan ºi Janet Essick sã stea în iahtul lor "Jeekers"?
+RO	EN	0094	Ce este nandrolonul?
+RO	EN	0095	În ce oraº alergãtorul Ben Johnson a ieºit pozitiv pentru Stanozol în timpul Jocurilor Olimpice?
+RO	EN	0096	Unde a muncit Francis Cammaerts cu Maquis în timpul celui de-al doilea Razboi Mondial?
+RO	EN	0097	În ce þarã a fost proporþia crimelor detectatã 31% în timpul perioadei 1991-1993?
+RO	EN	0098	La ce datã în timpul verii începe Departamentul Ventura Community Services progamul de varã?
+RO	EN	0099	De la ce ora dimineaþa poti vedea flori sãlbatice în floare la Mission Canyon în timpul Festivalul Florilor sãlbatice?
+RO	EN	0100	Ce este RLPO?
+RO	EN	0101	Ce este Atlantis?
+RO	EN	0102	Ce este Hubble?
+RO	EN	0103	Ce þarã a fost invadatã de Irak în 1990?
+RO	EN	0104	Unde s-a mutat Freud în 1939?
+RO	EN	0105	În ce þarã este Kashmir-ul?
+RO	EN	0106	Unde s-a scufundat petrolierul "Prestige"?
+RO	EN	0107	Ce companie produce modelele de maºini "Thunderbird" ºi "Mustang"?
+RO	EN	0108	Ce tratat au semnat Mihail Gorbatchov ºi Ronald Reagan în 1987?
+RO	EN	0109	Ce simfonie a fost compusã de Beethoven în 1824?
+RO	EN	0110	Ce jucãtor de fotbal a fost premiat cu "Gold Ball" în 1994?
+RO	EN	0111	Cine a jucat rolul principal în filmul "ªapte Ani în Tibet"?
+RO	EN	0112	Cine a fost comandantul Revoluþei din Varºovia?
+RO	EN	0113	Cine a scris epopeea fantasticã "Stãpânul Inelelor"?
+RO	EN	0114	Care este numele primei femei care a urcat muntele Everest fãrã mascã de oxigen?
+RO	EN	0115	Cine a fost numit "Cancelarul de fier"?
+RO	EN	0116	În ce an s-a întâmplat catastrofa de la Cernobâl ?
+RO	EN	0117	În ce an s-a nãscut Helmut Kohl?
+RO	EN	0118	În ce an s-a scufundat Titanicul?
+RO	EN	0119	Când a mers primul om pe lunã?
+RO	EN	0120	În ce oraº s-a nãscut Wolfgang Amadeus Mozart?
+RO	EN	0121	Cãrui partid îi aparþine Bill Clinton?
+RO	EN	0122	Câþi oameni au murit în timpul terorii lui Pol Pot?
+RO	EN	0123	Pentru ce a fost acuzat O.J. Simpson?
+RO	EN	0124	Cine este Stephen Hawking?
+RO	EN	0125	Ce este Yakuza?
+RO	EN	0126	Ce este Euro-Disney?
+RO	EN	0127	Ce este Hapkido?
+RO	EN	0128	Unde a avut loc Olimpiada de Iarnã în 1994?
+RO	EN	0129	Ce organizaþie ecologistã a fost fondatã în 1971?
+RO	EN	0130	Ce þarã a devenit independentã dupã 30 de ani de rãzboi civil?
+RO	EN	0131	Cine a fost Alexandre Graham Bell?
+RO	EN	0132	Ce este Lufthansa?
+RO	EN	0133	Ce este Christie's?
+RO	EN	0134	Ce este Eurovizionul?
+RO	EN	0135	Cine este preºedintele Letoniei?
+RO	EN	0136	În ce an a fost sãrbãtoritã Cupa Mondialã la Fotbal în Statele Unite?
+RO	EN	0137	În ce zi au semnat Iordanul ºi Israelul un tratat de pace?
+RO	EN	0138	În ce an a murit Bernard Montgomery?
+RO	EN	0139	Când a fost lansat telescopul Hubble Space?
+RO	EN	0140	În ce oraº se aflã centrul Johnson Space?
+RO	EN	0141	În ce oraº se aflã parcul acvatic Sea World?
+RO	EN	0142	Cãrei organizaþii îi este director Michael Camdessus?
+RO	EN	0143	Cãrui studio de film i-a fost Cedric Gibbons director ºef de arte?
+RO	EN	0144	Câþi locuitori are Longyearbyen?
+RO	EN	0145	Câte Oscaruri a câºtigat Razboiul Stelelor?
+RO	EN	0146	Care forþã a fost condusã de Luis Roldan din 1986 pânã în 1993?
+RO	EN	0147	Ce rãzboi a avut loc din 1939 pânã în 1945?
+RO	EN	0148	La ce sport a învins Europa pe America în 1987?
+RO	EN	0149	Ce þãri au format Acordul Nord American pentru Comerþul Liber?
+RO	EN	0150	Numeºte cei trei Beatles care sunt în viaþã.
+RO	EN	0151	Care este capitala Ceceniei?
+RO	EN	0152	Ce þarã a câºtigat Cupa Mondialã în 1994?
+RO	EN	0153	Când a fost dãrâmat Zidul Berlinului?
+RO	EN	0154	Ce trupã suedezã ºi-a scos primul album în 1994?
+RO	EN	0155	Unde s-a þinut finala campionatului mondial de fotbal în 1994?
+RO	EN	0156	În ce zi a avut loc primul atac IRA asupra aeroportului Heathrow?
+RO	EN	0157	Ce cometã vestitã a fost zaritã ultima oarã în atmosfera pamântului între 1985 ºi 1986?
+RO	EN	0158	Numeºte toate aeroporturile din Londra, Anglia.
+RO	EN	0159	Cine este Boris Becker?
+RO	EN	0160	Ce este Internetul?
+RO	EN	0161	De câte ori a câºtigat Zinedine Zidane US Open-ul?
+RO	EN	0162	În ce film al lui Kevin Reynolds a jucat Kevin Costner?
+RO	EN	0163	Ce este Knesset?
+RO	EN	0164	Ce fost prim ministru iranian a fost asasinat în 1991?
+RO	EN	0165	Unde s-au þinut Jocurile Olimpice din 1993?
+RO	EN	0166	Ce fel de bombe a folosit IRA în atacul asupra aeroportului Heathrow în 1994?
+RO	EN	0167	Ce este un Chinook?
+RO	EN	0168	Ce vârstã avea Roland Ratzenberger când a murit?
+RO	EN	0169	Ce bancã s-a prabuºit din cauza speculaþiilor fãcute de Nick Leeson?
+RO	EN	0170	Ce este sorgul?
+RO	EN	0171	Cine este Fernando Henrique Cardoso?
+RO	EN	0172	Cine a fost preºedintele Deutsche Bank în timpul falimentului speculatorului Juergen Schneider?
+RO	EN	0173	Care este numele celui mai mare penitenciar din Sao Paolo?
+RO	EN	0174	Cine este Rolf Ekeus?
+RO	EN	0175	Ce þãri sunt membre ale Consiliului de Cooperare din Golf?
+RO	EN	0176	Care este temperatura medie a suprafeþei pamântului?
+RO	EN	0177	Care este formula chimicã a dioxidului de carbon?
+RO	EN	0178	Cine a primit Premiul Nobel pentru literaturã în 1995?
+RO	EN	0179	Ce sunt fatwas?
+RO	EN	0180	Cu cine este cãsãtorit Aldrich Hazen Ames?
+RO	EN	0181	Care este penalizarea impusã Italiei pentru supraproductie în ceea ce priveste cota de lapte?
+RO	EN	0182	Ce festival de film conferã Ursul de Aur?
+RO	EN	0183	Cãrui grup aparþine compania de maºini Seat?
+RO	EN	0184	Cine este regizorul filmului "Caro diario"?
+RO	EN	0185	Câte rãzboaie s-au purtat între India ºi Pakistan pentru posesiunea provinciei Kashmir?
+RO	EN	0186	De câte ori a devenit Jackie Stewart campion mondial?
+RO	EN	0187	Ce stat a aprobat o lege care interzice publicitatea pentru þigãri?
+RO	EN	0188	Ce este ecu?
+RO	EN	0189	Câte rezervaþii naturale are Costa Rica?
+RO	EN	0190	Care este numele fondatorului Black Sparrow Press?
+RO	EN	0191	Ce este APEC?
+RO	EN	0192	Care este porecla lui Eddy Merckx?
+RO	EN	0193	Unde este Hermitage-ul?
+RO	EN	0194	Cine a creat sistemul de operare OS/2?
+RO	EN	0195	Cine domina Sudanul în 1899?
+RO	EN	0196	Cine au fost "The Picts"?
+RO	EN	0197	Cu cât a fost amendat John Fashanu?
+RO	EN	0198	Care este actualul nume al Ceylon-ului?
+RO	EN	0199	Ce rãzboi a durat din 1865 pânã în 1870?
+RO	EN	0200	Cine a salvat evrei în timpul celui de-al doilea Rãzboi Mondial?
+		
