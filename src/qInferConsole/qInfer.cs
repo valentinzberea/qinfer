@@ -39,7 +39,8 @@ namespace qInfer.qInferConsole
 
         static XmlNode CreateQuestionNode(XmlDocument xmlDoc, string questionText)
         {
-            string questionType = GetQuestionType(questionText);
+            QuestionServices.Service service = new QuestionServices.Service();
+            string questionType =  service.GetQuestionType(questionText);
             
             XmlNode qElement = xmlDoc.CreateElement("q");
             XmlAttribute qTypeAttr = xmlDoc.CreateAttribute("q_type");
@@ -53,28 +54,7 @@ namespace qInfer.qInferConsole
             return qElement;
         }
 
-        static XmlDocument _QTypesXmlDocument;
-        static string GetQuestionType(string questionText)
-        {
-            if (_QTypesXmlDocument == null)
-            {
-                _QTypesXmlDocument = new XmlDocument();
-                _QTypesXmlDocument.Load("QTypesDef.xml");
-            }
-
-            foreach(XmlNode typeNode in _QTypesXmlDocument.SelectNodes("/Q_TYPES/Type"))
-            {
-                bool isMatch = Regex.Match(
-                    questionText, 
-                    typeNode.Attributes["Expression"].Value).Success;
-                if (isMatch)
-                {
-                    return typeNode.Attributes["Id"].Value;
-                }
-            }
-
-            return "INVALID";
-        }
+        
 	}
 }
 
