@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qInferConsole", "qInferCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{D2D3BFC9-6FC4-49A9-8047-58BDA684BAFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{11BACF34-EF20-4E19-9032-4018AAE26BF2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8CA13E1F-494E-4E40-A343-EBDCC6081427}"
 	ProjectSection(SolutionItems) = preProject
 		..\build.bat = ..\build.bat
@@ -18,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Files", "Test Files", 
 		..\doc\QTypesDef.xml = ..\doc\QTypesDef.xml
 		..\doc\qa\schema.ini = ..\doc\qa\schema.ini
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionServices", "QuestionServices\QuestionServices.csproj", "{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,12 +38,12 @@ Global
 		{D2D3BFC9-6FC4-49A9-8047-58BDA684BAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D3BFC9-6FC4-49A9-8047-58BDA684BAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D3BFC9-6FC4-49A9-8047-58BDA684BAFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11BACF34-EF20-4E19-9032-4018AAE26BF2}.AutomatedDebug|Any CPU.ActiveCfg = AutomatedDebug|Any CPU
-		{11BACF34-EF20-4E19-9032-4018AAE26BF2}.AutomatedDebug|Any CPU.Build.0 = AutomatedDebug|Any CPU
-		{11BACF34-EF20-4E19-9032-4018AAE26BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11BACF34-EF20-4E19-9032-4018AAE26BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11BACF34-EF20-4E19-9032-4018AAE26BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11BACF34-EF20-4E19-9032-4018AAE26BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}.AutomatedDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}.AutomatedDebug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D5ED77-98DE-4035-8ABA-129D9635E9B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
