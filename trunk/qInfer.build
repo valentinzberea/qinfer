@@ -19,7 +19,7 @@
 	<target name="test" depends="compile, run-unit-tests" 
 		description="Compile and Run Tests" />
 		
-	<target name="full" depends="clean, test"	description="Compiles, tests" />
+	<target name="full" depends="clean, compile, move-for-test"	description="Compiles, tests" />
 
 	<target name="move-for-test">
 		<copy todir="${build.dir}\${project.config}" flatten="true">
