@@ -12,17 +12,17 @@ namespace qInfer.qInferConsole
 		[STAThread]
 		static void Main(string[] args)
 		{
-            string qFileName = "intrebari.txt";
+            const string qFileName = "intrebari.txt";
 
-            Dictionary<string,string> qDictionary = 
+            var qDictionary = 
                 new QuestionsParser { CsvFilePath = qFileName }.GetQuestions();
 
-            XmlDocument resultXmlDocument = new XmlDocument();
+            var resultXmlDocument = new XmlDocument();
             
-            XmlNode parentNode = resultXmlDocument.AppendChild(
+            var parentNode = resultXmlDocument.AppendChild(
                     resultXmlDocument.CreateElement("QUESTIONS")
                     );
-            foreach (string questionId in qDictionary.Keys)
+            foreach (var questionId in qDictionary.Keys)
             {
 
                 parentNode.AppendChild(
@@ -30,10 +30,8 @@ namespace qInfer.qInferConsole
                 
             }
 
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.OmitXmlDeclaration = false;
-            settings.Indent = true;
-            using (XmlWriter writer = XmlWriter.Create("result.xml",settings ))
+            var settings = new XmlWriterSettings {OmitXmlDeclaration = false, Indent = true};
+		    using (var writer = XmlWriter.Create("result.xml",settings ))
             {
                 resultXmlDocument.WriteContentTo(writer);
             }
@@ -41,16 +39,16 @@ namespace qInfer.qInferConsole
 
         static XmlNode CreateQuestionNode(XmlDocument xmlDoc,string questionId, string questionText)
         {
-            QuestionServices.Service service = new QuestionServices.Service();
-            string questionType =  service.GetQuestionType(questionText);
+            var service = new QuestionServices();
+            var questionType =  service.GetQuestionType(questionText);
             
             XmlNode qElement = xmlDoc.CreateElement("q");
             
-            XmlAttribute qTypeAttr = xmlDoc.CreateAttribute("q_type");
+            var qTypeAttr = xmlDoc.CreateAttribute("q_type");
             qTypeAttr.Value = questionType;
             qElement.Attributes.Append(qTypeAttr);
 
-            XmlAttribute idAttr = xmlDoc.CreateAttribute("id");
+            var idAttr = xmlDoc.CreateAttribute("id");
             idAttr.Value = questionId;
             qElement.Attributes.Append(idAttr);
 

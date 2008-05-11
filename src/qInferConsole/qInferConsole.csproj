@@ -120,27 +120,9 @@
     <Compile Include="qInfer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Web References\QuestionServices\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="http://localhost/QuestionServices/Service.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\QuestionServices\</RelPath>
-      <UpdateFromURL>http://localhost/QuestionServices/Service.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>qInfer_QuestionServices_Service</CachedSettingsPropName>
-    </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -148,12 +130,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\QuestionServices\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\QuestionServices\Service.disco" />
-    <None Include="Web References\QuestionServices\Service.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
