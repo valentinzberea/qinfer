@@ -1,0 +1,9 @@
+<A_TYPES>
+	<Type Id="PERSON" Expression="(?>Ce|Care|Numiti|Cum se numeste).*"/>
+	<Type Id="COUNT" Expression="(?>Ce|Care este)\s(?>poziti.|vârst..?|procent.?.?|numar.?.?).*"/>
+	<Type Id="MEASURE" Expression="(?>Ce|Care).*(?>suprafat.|înaltime.?|mas.|vitez.|lungime.?|cantitate.?).*"/>
+	<Type Id="LOCATION" Expression="(?>.{2,4}\sce|Care|Numiti.).*(?>regiun.|judet|localit..|oras|capital.|insul.|vârf|t..?r..?|teritori.).*"/>
+	<Type Id="TIME" Expression="(?>În ce|La ce|Dupa câ(?>t|ti))\s(?>an|secol|perioad.|dat.|timp|or.).*"/>
+	<Type Id="ORGANIZATION" Expression="(?>Ce (?!a\s)|Care este|La|Cum se numeste).*?(al\s)(?>organizati.|agenti.|compani.|firm.|entitate.?|fond.?.?|producator|institut|ordin..|partid|CIA|Agentia...|UNESCO|Eesti|Solidaritatea|Eteria).*"/>
+	<Type Id="OBJECT" Expression="(?>Ce|Care|Numiti|Cum se numeste|Pentru ce|La ce).*?(?>un|o)?\s?(?>instrument|produs|aparat|mijloc|unitatea|beton-lemn|modul|echipament|jucari.|busol.|armur.|echipament|calculator|dispozitiv|Selena).*"/>
+</A_TYPES>
