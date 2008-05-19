@@ -1,5 +1,5 @@
 <A_TYPES>
-	<Type Id="PERSON" Expression="(?>Ce|Care|Numiti|Cum se numeste).*"/>
+	<Type Id="PERSON" Expression="(?>Ce|Care|Numiti|Cum se numeste).*(?>realizator|regizor|soţi.|scriitor|actor|artist\s|cântăreţ|istoric|gânditor|autor|muritoa?r|membr.|partener.?)"/>
 	<Type Id="COUNT" Expression="(?>Ce|Care este)\s(?>poziti.|vârst..?|procent.?.?|numar.?.?).*"/>
 	<Type Id="MEASURE" Expression="(?>Ce|Care).*(?>suprafat.|înaltime.?|mas.|vitez.|lungime.?|cantitate.?).*"/>
 	<Type Id="LOCATION" Expression="(?>.{2,4}\sce|Care|Numiti.).*(?>regiun.|judet|localit..|oras|capital.|insul.|vârf|t..?r..?|teritori.).*"/>
