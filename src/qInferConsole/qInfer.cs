@@ -1,63 +1,50 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Xml;
-using System.Text.RegularExpressions;
-using qInfer.Core;
+
 
 namespace qInfer.qInferConsole
 {
 	class qInfer
 	{
+        enum OPERATION
+        {
+            WRITE_QUESTION_TYPES = 0,
+            WRITE_ANSWERS_TYPES = 1,
+            WRITE_ANSWERS = 2
+        }
+
 		[STAThread]
 		static void Main(string[] args)
 		{
+            if(args.Length == 0)
+            {
+                Console.WriteLine("One parameter is required:");
+                Console.WriteLine("0 - write questions types");
+                Console.WriteLine("1 - write questions answers");
+                return;
+            }
+
             const string qFileName = "intrebari.txt";
 
-            var qDictionary = 
-                new QuestionsParser { CsvFilePath = qFileName }.GetQuestions();
-
-            var resultXmlDocument = new XmlDocument();
-            
-            var parentNode = resultXmlDocument.AppendChild(
-                    resultXmlDocument.CreateElement("QUESTIONS")
-                    );
-            foreach (var questionId in qDictionary.Keys)
+		    var operationType = (OPERATION) Enum.Parse(typeof (OPERATION), args[0]);
+		    switch(operationType)
             {
-
-                parentNode.AppendChild(
-                    CreateQuestionNode(resultXmlDocument, questionId, qDictionary[questionId]));
-                
+                case OPERATION.WRITE_QUESTION_TYPES:
+                    var resultOperations = new AnalysisResult();
+                    resultOperations.WriteQuestions(qFileName);
+                    resultOperations.WriteQuestionsTypes();
+                    break;
+                case OPERATION.WRITE_ANSWERS_TYPES:
+                    new AnalysisResult().WriteAnswersTypes();
+                    break;
+                case OPERATION.WRITE_ANSWERS:
+                    new AnalysisResult().WriteQuestionsAnswers();
+                    break;
             }
-
-            var settings = new XmlWriterSettings {OmitXmlDeclaration = false, Indent = true};
-		    using (var writer = XmlWriter.Create("result.xml",settings ))
-            {
-                resultXmlDocument.WriteContentTo(writer);
-            }
+		    
 		}
 
-        static XmlNode CreateQuestionNode(XmlDocument xmlDoc,string questionId, string questionText)
-        {
-            var service = new QuestionServices();
-            var questionType =  service.GetQuestionType(questionText);
-            
-            XmlNode qElement = xmlDoc.CreateElement("q");
-            
-            var qTypeAttr = xmlDoc.CreateAttribute("q_type");
-            qTypeAttr.Value = questionType;
-            qElement.Attributes.Append(qTypeAttr);
-
-            var idAttr = xmlDoc.CreateAttribute("id");
-            idAttr.Value = questionId;
-            qElement.Attributes.Append(idAttr);
-
-            XmlNode questionElement = xmlDoc.CreateElement("question");
-            questionElement.AppendChild(xmlDoc.CreateTextNode(questionText));
-            qElement.AppendChild(questionElement);
-
-            return qElement;
-        }
+        
 
         
 	}
