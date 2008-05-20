@@ -1,5 +1,18 @@
 <Q_TYPES>
-	<Type Id="DEFINITION" Expression="^Cine.*"/>
-	<Type Id="LIST" Expression="^Care sunt.*"/>
-	<Type Id="FACTOID" Expression=".*"/>
+  <Type Id="DEFINITION">
+    <Expression>
+      <![CDATA[(?>Ce|Care|Numiti|Cum|Cine)\s(?<1>este|se numeste)\s(?<2>.*)\?]]>  
+    </Expression>
+    <AnswerPatterns>
+      <Answer>
+        <![CDATA[(?>{1} {0})(?<answer>.*).]]>
+      </Answer>
+    </AnswerPatterns>
+  </Type>
+  <Type Id="LIST">
+    <![CDATA[^Care sunt.*]]>
+  </Type>
+  <Type Id="FACTOID">
+    <![CDATA[.*]]>
+  </Type>
 </Q_TYPES>
