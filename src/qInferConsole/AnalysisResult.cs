@@ -2,6 +2,9 @@ using System;
 using System.Xml;
 using qInfer.Core;
 using System.Diagnostics;
+using System.Collections.Generic;
+using System.Configuration;
+
 
 namespace qInfer.qInferConsole
 {
@@ -37,21 +40,69 @@ namespace qInfer.qInferConsole
         {
             var resultDoc = new XmlDocument();
             resultDoc.Load(RESULT_FILE_NAME);
-
+           
             try
             {
                 foreach(XmlNode questionNode in resultDoc.SelectNodes("/QUESTIONS/q"))
                 {
                     var questionText = questionNode.SelectSingleNode("question").InnerText;
+                    
                     var questionType = new QuestionServices().GetQuestionType(questionText);
+                    
                     questionNode.Attributes.Append(
-                        GetAttribute(resultDoc, "q_type", questionType));
-                        
+                        GetAttribute(resultDoc, "q_type", questionType.Type));
+                    if(questionType.WordsFound.Count > 0)
+                    {
+                        questionNode.AppendChild(CreateWordsNode(resultDoc, questionType.WordsFound));
+                    }
+                    if (questionType.AnswerPatterns.Count > 0)
+                    {
+                        questionNode.AppendChild(CreatePatternsNode(resultDoc, questionType.AnswerPatterns));
+                    }
                 }
                 SaveResultXmlDocument(resultDoc);
             }
             catch { }
 
+        }
+
+        private XmlNode CreateWordsNode(XmlDocument xmlDoc,List<string> words)
+        {
+            XmlNode wordsNode = xmlDoc.CreateElement("Words");
+            foreach(var wordText in words)
+            {
+                XmlNode singleWordNode = xmlDoc.CreateElement("word");
+                singleWordNode.AppendChild(xmlDoc.CreateTextNode(wordText));
+                wordsNode.AppendChild(singleWordNode);
+            }
+            return wordsNode;
+        }
+
+        private XmlNode CreatePatternsNode(XmlDocument xmlDoc, List<string> patterns)
+        {
+            XmlNode patternsNode = xmlDoc.CreateElement("AnswerPatterns");
+            foreach (var patternText in patterns)
+            {
+                XmlNode singlePatternNode = xmlDoc.CreateElement("Answer");
+                singlePatternNode.AppendChild(xmlDoc.CreateCDataSection(patternText));
+                patternsNode.AppendChild(singlePatternNode);
+            }
+            return patternsNode;
+        }
+
+        private XmlNode CreateQuestionNode(
+            XmlDocument xmlDoc,
+            string questionId, string questionText)
+        {
+            XmlNode qElement = xmlDoc.CreateElement("q");
+
+            qElement.Attributes.Append(GetAttribute(xmlDoc, "id", questionId));
+
+            XmlNode questionElement = xmlDoc.CreateElement("question");
+            questionElement.AppendChild(xmlDoc.CreateTextNode(questionText));
+            qElement.AppendChild(questionElement);
+
+            return qElement;
         }
         #endregion
 
@@ -89,10 +140,23 @@ namespace qInfer.qInferConsole
             {
                 foreach (XmlNode questionNode in resultDoc.SelectNodes("/QUESTIONS/q"))
                 {
-                    var questionText = questionNode.SelectSingleNode("question").InnerText;
+                    
                     var questionId = questionNode.SelectSingleNode("@id").Value;
 
-                    var answer = new QuestionServices().GetAnswerToQuestion(questionText);
+                    var answerPatterns = new List<string>();
+                    var patterns = questionNode.SelectNodes("AnswerPatterns/Answer");
+                    if (patterns != null)
+                    {
+                        foreach (XmlNode patternNode in patterns)
+                        {
+                            answerPatterns.Add(patternNode.InnerText);
+                        }
+                    }
+                    Debugger.Launch();
+                    var answer = new QuestionServices().GetAnswerToQuestion(
+                        ConfigurationManager.AppSettings["WikiFiles"], 
+                        questionId, 
+                        answerPatterns);
                     questionNode.AppendChild(
                         CreateAnswerNode(resultDoc, answer, questionId));
                 }
@@ -102,22 +166,6 @@ namespace qInfer.qInferConsole
         }
         #endregion
 
-        #region CreateQuestionNode
-        private XmlNode CreateQuestionNode(
-            XmlDocument xmlDoc, 
-            string questionId, string questionText)
-        {
-            XmlNode qElement = xmlDoc.CreateElement("q");
-
-            qElement.Attributes.Append(GetAttribute(xmlDoc,"id",questionId));
-
-            XmlNode questionElement = xmlDoc.CreateElement("question");
-            questionElement.AppendChild(xmlDoc.CreateTextNode(questionText));
-            qElement.AppendChild(questionElement);
-
-            return qElement;
-        }
-        #endregion
 
         #region CreateAnswerNode
         private XmlNode CreateAnswerNode(XmlDocument xmlDoc, QuestionServices.Answer answer, string baseId)

@@ -17,7 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Files", "Test Files", 
 		..\doc\qa\intrebari.txt = ..\doc\qa\intrebari.txt
 		..\doc\QTypesDef.xml = ..\doc\QTypesDef.xml
 		..\doc\qa\schema.ini = ..\doc\qa\schema.ini
-		..\doc\zeus.txt = ..\doc\zeus.txt
 	EndProjectSection
 EndProject
 Global
