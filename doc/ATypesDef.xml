@@ -1,23 +1,23 @@
 <A_TYPES>
   <Type Id="PERSON">
-    <![CDATA[(?>Ce|Care|Numiti|Cum|Cine)\s(?<predicat>este|se numeste).*(?<subiect>realizator|regizor|soţi.|scriitor|actor|artist\s|cântăreţ|istoric|gânditor|autor|muritoa?r|membr.|partener.?)]]>
+    <![CDATA[(?>Ce|Care|Numiti|Cum|Cine)\s(?<predicat>este|se numeste).*(?<subiect>realizator|regizor|preşedinte|soţi.|scriitor|actor|artist\s|cântăreţ|istoric|gânditor|autor|muritoa?r|membr.|partener.?|zeiţă|reprezentanţi|dictator|discipol)]]>
   </Type>
   <Type Id="COUNT">
-    <![CDATA[(?>Ce|Care este)\s(?>poziti.|vârst..?|procent.?.?|numar.?.?).*]]>
+    <![CDATA[(?>Ce|Care este)\s(?>poziţi.|vârst..?|procent.?.?|număr.?.?).*]]>
   </Type>
   <Type Id="MEASURE">
-    <![CDATA[(?>Ce|Care).*(?>suprafat.|înaltime.?|mas.|vitez.|lungime.?|cantitate.?).*]]>
+    <![CDATA[(?>Ce|Care).*(?>suprafaţ.|înălţime.?|mas.|amplitudine|durata|adâncime|vitez.|lungime.?|cantitate.?|dimensiuni|densitatea).*]]>
   </Type>
 	<Type Id="LOCATION">
-    <![CDATA[(?>.{2,4}\sce|Care|Numiti.).*(?>regiun.|judet|localit..|oras|capital.|insul.|vârf|t..?r..?|teritori.).*]]>
+    <![CDATA[(?>.{2,4}\sce|Care|Numiti.).*(?>regiun.|judeţ|raioane|localit..|oraş|capital.|insul.|vârf|ţ..?r..?|teritori.|provincie|continent|stat).*]]>
   </Type>
 	<Type Id="TIME">
-    <![CDATA[(?>În ce|La ce|Dupa câ(?>t|ti))\s(?>an|secol|perioad.|dat.|timp|or.).*]]>
+    <![CDATA[(?>În ce|La ce|Dupa câ(?>t|ti))\s(?>an|secol|perioad.|dat.|timp|oră|ora).*]]>
   </Type>
 	<Type Id="ORGANIZATION">
-    <![CDATA[(?>Ce (?!a\s)|Care este|La|Cum se numeste).*?(al\s)(?>organizati.|agenti.|compani.|firm.|entitate.?|fond.?.?|producator|institut|ordin..|partid|CIA|Agentia...|UNESCO|Eesti|Solidaritatea|Eteria).*]]>
+    <![CDATA[(?>Ce (?!a\s)|Care este|La|Cum se numeste).*?(al\s)(?>organizaţi.|Organizaţi|agenţi.|universitate|grupare|compani.|firm.|entitate.?|fond.?.?|producător|institu.|închisoare|ordin..|partid|CIA|Agenţia...|UNESCO|Eesti|Solidaritatea|Eteria|condus|NATO|Uniunea Europeană).*]]>
   </Type>
 	<Type Id="OBJECT">
-    <![CDATA[(?>Ce|Care|Numiti|Cum se numeste|Pentru ce|La ce).*?(?>un|o)?\s?(?>instrument|produs|aparat|mijloc|unitatea|beton-lemn|modul|echipament|jucari.|busol.|armur.|echipament|calculator|dispozitiv|Selena).*]]>
+    <![CDATA[(?>Ce|Care|Numiti|Cum se numeste|Pentru ce|La ce).*?(?>un|o)?\s?(?>instrument|produs|armele|aparat|mijloc|unitatea|beton-lemn|modul|echipament|jucări.|busol.|armur.|echipament|calculator|dispozitiv|Selena|patrafir).*]]>
   </Type>
 </A_TYPES>
