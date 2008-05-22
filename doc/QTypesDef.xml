@@ -1,7 +1,7 @@
 <Q_TYPES>
   <Type Id="DEFINITION">
     <Expression>
-      <![CDATA[(?>Ce|Care|Numiti|Cum|Cine)\s(?<1>este|se numeste)\s(?<2>.*)\?]]>  
+      <![CDATA[(?>Ce|Care|Numiti|Cum|Cine)\s(?<1>este|se numeste|înseamnă|(?>a fost)|sunt)\s(?<2>.*)\?]]>
     </Expression>
     <AnswerPatterns>
       <Answer>
@@ -10,7 +10,7 @@
     </AnswerPatterns>
   </Type>
   <Type Id="LIST">
-    <![CDATA[^Care sunt.*]]>
+    <![CDATA[(?>Care sunt|Asupra căror|Ce tipuri|Cine erau|Care sunt|Numiţi (?!(?>un|o)\s)).*]]>
   </Type>
   <Type Id="FACTOID">
     <![CDATA[.*]]>
